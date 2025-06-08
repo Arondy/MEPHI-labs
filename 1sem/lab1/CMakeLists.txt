@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.23)
+project(C99 C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(palindrom palindrom.c)
+add_executable(test test.c)
+add_executable(sum_of_digits sum_of_digits.c)
+add_executable(lab15.09 lab15.09.c)
+add_executable(exp_22.09 exp_22.09_hw.c)
+add_executable(sin_22.09 sin_22.09_hw.c)
+add_executable(lab2 lab2.c)
+add_executable(lab2f lab2f.c)
+add_executable(lab2w lab2w.c)
+add_executable(array_hw array_hw.c)
+add_executable(array2_hw array2_hw.c)
+add_executable(lab3 lab3.c)

@@ -1,0 +1,66 @@
+services:
+  website:
+    build:
+      context: ./website
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    deploy:
+      resources:
+        limits:
+          cpus: "${CPU_LIMIT_WEB}"
+
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - website
+      - webapi
+    networks:
+      - app-network
+
+  webapi:
+    build:
+      context: ./webapi
+    ports:
+      - "8000:8000"
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+    deploy:
+      resources:
+        limits:
+          cpus: "${CPU_LIMIT_WEB}"
+
+
+  processor:
+    build:
+      context: ./processor
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+    deploy:
+      resources:
+        limits:
+          cpus: "${CPU_LIMIT_P}"
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672" # Порт для сообщений
+      - "15672:15672" # Веб-интерфейс RabbitMQ
+    networks:
+      - app-network
+    deploy:
+      resources:
+        limits:
+          cpus: "${CPU_LIMIT_R}"
+
+networks:
+  app-network:

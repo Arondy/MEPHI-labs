@@ -1,0 +1,8 @@
+{
+  "field": "rnbq/bnrpppppppp////////////////////k////////R//P//P/Q//RNB/KBNR",
+  "names": ["Player_1", "Player_2"],
+  "elo": [700, 1400],
+  "clock": [20, 600, 5],
+  "history": [],
+  "turn": "white"
+}

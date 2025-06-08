@@ -1,0 +1,5 @@
+5
+1 f _ first
+0 s f second
+1 t _ third
+1 fo t fourth

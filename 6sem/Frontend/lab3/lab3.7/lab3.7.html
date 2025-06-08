@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 3.7</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .colored-text span:nth-child(odd) {
+            color: red;
+        }
+        .colored-text span:nth-child(even) {
+            color: blue;
+        }
+        #blue {
+            color: blue;
+        }
+        .underscored {
+            text-decoration: none;
+            border-bottom: 2px solid currentColor;
+        }
+        #anotherFont {
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            background-color: cyan;
+            margin-top: 20px;
+        }
+        td {
+            border: 1px solid;
+            padding: 10px;
+        }
+        td[colspan="2"] {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Добро пожаловать!</h1>
+
+<p class="colored-text">
+    <i><span>П</span><span>р</span><span>и</span><span>в</span><span>е</span><span>т</span><span>с</span><span>т</span><span>в</span><span>у</span><span>е</span><span>м</span></i>
+    <span></span><span class="underscored">в</span><span class="underscored">а</span><span class="underscored">с</span>
+    <b><span id="blue">в</span></b>
+    <b><span>н</span><span>а</span><span>ш</span><span>е</span><span>м</span></b>
+    <a href="http://example.com/">магазине</a>!
+</p>
+
+<p>&lt;h1&gt;<span id="anotherFont">Теорема Пифагора</span>&lt;/h1&gt;: \( c^2 = a^2 + b^2 \)</p>
+<table>
+    <tr>
+        <td colspan="2">Информация</td>
+    </tr>
+    <tr>
+        <td>Старая цена: <s>1000</s> ₽</td>
+        <td>Новая цена: 500 ₽</td>
+    </tr>
+</table>
+</body>
+</html>

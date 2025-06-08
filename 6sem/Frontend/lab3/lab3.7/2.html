@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания 2-5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .device-type {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 1024px) {
+            .device-type::after {
+                content: "Tablet";
+            }
+        }
+
+        @media (max-width: 768px) {
+            .device-type::after {
+                content: "Mobile";
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .device-type::after {
+                content: "Desktop";
+            }
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        .circle {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+
+        .content {
+            margin-top: 100px;
+            height: 2000px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="device-type"></div>
+
+<div class="menu">
+    <a href="#">Главная</a>
+    <a href="#">Каталог</a>
+    <a href="#">Контакты</a>
+    <a href="#">О нас</a>
+</div>
+
+<div class="circle"></div>
+
+<div class="content">
+    <p>Прокрутите страницу вниз, чтобы увидеть, как меню остается на месте</p>
+</div>
+
+<script src="2.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 3.6</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: 4px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            background-color: #004085;
+        }
+        #counter, #avgClicks {
+            font-size: 24px;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<h1>Лабораторная работа 3.6: HTML Basics, DOM API</h1>
+
+<!-- Задание 1, 2 -->
+<h1>Добро пожаловать!</h1>
+<p><i>Приветствуем</i> <u>вас</u> <b>в нашем</b> <a href="http://example.com/">магазине</a>!</p>
+
+<p>&lt;h1>Теорема Пифагора&lt;/h1>: \( c^2 = a^2 + b^2 \)</p>
+
+<div style="max-width: 600px; width: 75%">
+    <table>
+        <thead>
+        <tr>
+            <td colspan="2">Информация</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Старая цена: <s>1000</s> ₽</td>
+            <td>Новая цена: 500 ₽</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Задание 3, 4 -->
+<div id="counter">Счетчик: 0</div>
+<div id="avgClicks">Средняя скорость: 0 кликов/сек</div>
+<br>
+<button id="clickButton">Нажми меня!</button>
+<button id="resetButton">Сбросить счетчик</button>
+
+<script src="lab3.6.js"></script>
+</body>
+</html>

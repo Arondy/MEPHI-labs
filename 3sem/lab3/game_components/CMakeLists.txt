@@ -1,0 +1,1 @@
+add_library(game_components clock.cpp clock.h history.cpp history.h player.h square.h)

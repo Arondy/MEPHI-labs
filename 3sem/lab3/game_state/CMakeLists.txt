@@ -1,0 +1,1 @@
+add_library(game_state GameState.cpp GameState.h)

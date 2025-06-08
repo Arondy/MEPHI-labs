@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .calculator {
+            display: inline-block;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .display {
+            width: 220px;
+            height: 40px;
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            gap: 10px;
+        }
+        .button {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+        }
+        .button:active {
+            background-color: #ccc;
+        }
+        .button.operator {
+            background-color: #ff9500;
+            color: white;
+        }
+        .button.operator.active {
+            background-color: #ff6f00;
+        }
+        .button.clear {
+            background-color: #ff3b30;
+            color: white;
+        }
+        .button:hover {
+            opacity: 0.5;
+        }
+
+        .button:active {
+            transform: scale(0.95);
+            background-color: #ccc;
+        }
+
+        .button.operator:hover {
+            background-color: #ffaa33;
+        }
+
+        .button.operator:active {
+            background-color: #ff8c00;
+        }
+
+        .button.clear:hover {
+            background-color: #ff5e4d;
+        }
+
+        .button.clear:active {
+            background-color: #cc2f23;
+        }
+    </style>
+</head>
+<body>
+<div class="calculator">
+    <input type="text" class="display" id="number1" placeholder="Первое число" readonly>
+    <br>
+    <input type="text" class="display" id="number2" placeholder="Второе число" readonly>
+    <div class="buttons">
+        <button class="button" data-value="7">7</button>
+        <button class="button" data-value="8">8</button>
+        <button class="button" data-value="9">9</button>
+        <button class="button operator" data-value="/">/</button>
+
+        <button class="button" data-value="4">4</button>
+        <button class="button" data-value="5">5</button>
+        <button class="button" data-value="6">6</button>
+        <button class="button operator" data-value="*">*</button>
+
+        <button class="button" data-value="1">1</button>
+        <button class="button" data-value="2">2</button>
+        <button class="button" data-value="3">3</button>
+        <button class="button operator" data-value="-">-</button>
+
+        <button class="button" data-value="0">0</button>
+        <button class="button clear" data-value="C">C</button>
+        <button class="button operator" data-value="=">=</button>
+        <button class="button operator" data-value="+">+</button>
+    </div>
+</div>
+
+<script src="calculator.js"></script>
+</body>
+</html>

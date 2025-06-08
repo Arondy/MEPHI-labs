@@ -1,0 +1,9 @@
+/baseline.prof
+/gitinit.bat
+.pytest_cache/
+/prof.bat
+__pycache__/
+/.idea/
+.pytest_cache/
+/*.pdf
+*.bak

@@ -1,0 +1,2 @@
+sqlite3 sport_club.db < create.sql
+pause

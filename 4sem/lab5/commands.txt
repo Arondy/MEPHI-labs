@@ -1,0 +1,3 @@
+perf stat ./c 1.jpg o1.jpg
+gcc main.c lab.o -o asm -lm -O3
+gcc main.c -o c -lm -O0

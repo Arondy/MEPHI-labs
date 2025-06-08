@@ -1,0 +1,89 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+#      no_cache: true
+#    ports:
+#      - "80:80"  # Публикуем порт Nginx для внешнего доступа
+    depends_on:
+      - consumer1
+      - consumer2
+    networks:
+      - lab2tnetwork
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+
+  producer1:
+    build:
+      context: ./producer1
+      # no_cache: true
+    env_file:
+      - ./all.env
+    networks:
+      - lab2tnetwork
+    depends_on:
+      - nginx
+
+  producer2:
+    build:
+      context: ./producer2
+      # no_cache: true
+    env_file:
+      - ./all.env
+    networks:
+      - lab2tnetwork
+    depends_on:
+      - nginx
+
+  consumer1:
+    build:
+      context: ./consumer1
+      # no_cache: true
+    networks:
+      - lab2tnetwork
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          
+  consumer2:
+    build:
+      context: ./consumer2
+      # no_cache: true
+    networks:
+      - lab2tnetwork
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          
+  consumer3:
+    build:
+      context: ./consumer2
+      # no_cache: true
+    networks:
+      - lab2tnetwork
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+
+  compute:
+    build:
+      context: ./compute
+      # no_cache: true
+    networks:
+      - lab2tnetwork
+    env_file:
+      - ./all.env
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+
+networks:
+  lab2tnetwork:

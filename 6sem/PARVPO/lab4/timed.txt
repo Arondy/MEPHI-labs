@@ -1,0 +1,99 @@
+k = 10
+
+Wrote in 2.80722 seconds
+SQL wrote in 42.0467 seconds
+
+SQL wrote in 42.0188 seconds
+Wrote in 2.87808 seconds
+
+Read in 7.93401 seconds (length: 65536000)
+SQL read in 10.9868 seconds (length: 65536000)
+
+SQL read in 9.46458 seconds
+Read in 8.19297 seconds
+
+Substring searched in 2.85411 seconds (length: 935)
+SQL substring searched in 4.98044 seconds (length: 935)
+
+SQL substring searched in 5.11754 seconds (length: 935)
+Substring searched in 2.90944 seconds (length: 935)
+
+k = 100
+
+Wrote in 1.70519 seconds
+SQL wrote in 7.50258 seconds
+
+SQL wrote in 7.52952 seconds
+Wrote in 1.69453 seconds
+
+Read in 2.91097 seconds (length: 9892226)
+SQL read in 2.64206 seconds (length: 9892226)
+
+SQL read in 2.73019 seconds (length: 9892226)
+Read in 3.03091 seconds (length: 9892226)
+
+Substring searched in 1.32472 seconds (length: 1914)
+SQL substring searched in 1.52 seconds (length: 1914)
+
+SQL substring searched in 1.52292 seconds (length: 1914)
+Substring searched in 1.33326 seconds (length: 1914)
+
+k = 1000
+
+Wrote in 1.07817 seconds
+SQL wrote in 1.8865 seconds
+
+SQL wrote in 1.81327 seconds
+Wrote in 1.09765 seconds
+
+Read in 1.01622 seconds (length: 1042322)
+SQL read in 0.954191 seconds (length: 1042322)
+
+SQL read in 0.913636 seconds (length: 1042322)
+Read in 1.00248 seconds (length: 1042322)
+
+Substring searched in 0.992491 seconds (length: 1990)
+SQL substring searched in 0.937353 seconds (length: 1990)
+
+SQL substring searched in 0.930782 seconds (length: 1990)
+Substring searched in 0.984359 seconds (length: 1990)
+
+k = 10000
+
+Wrote in 0.615567 seconds
+SQL wrote in 1.18977 seconds
+
+SQL wrote in 1.27435 seconds
+Wrote in 0.670237 seconds
+
+Read in 0.74127 seconds (length: 104794)
+SQL read in 0.7121 seconds (length: 104794)
+
+SQL read in 0.700851 seconds (length: 104794)
+Read in 0.749723 seconds (length: 104794)
+
+Substring searched in 0.937933 seconds (length: 1943)
+SQL substring searched in 0.905096 seconds (length: 1943)
+
+SQL substring searched in 0.901756 seconds (length: 1943)
+Substring searched in 0.925795 seconds (length: 1943)
+
+k = 100000
+
+Wrote in 0.205199 seconds
+SQL wrote in 0.957213 seconds
+
+SQL wrote in 1.1198 seconds
+Wrote in 0.203803 seconds
+
+Read in 0.687028 seconds (length: 10485)
+SQL read in 0.53162 seconds (length: 10485)
+
+SQL read in 0.547093 seconds (length: 10485)
+Read in 0.674233 seconds (length: 10485)
+
+Substring searched in 0.917425 seconds (length: 1755)
+SQL substring searched in 0.799523 seconds (length: 1755)
+
+SQL substring searched in 0.810559 seconds (length: 1755)
+Substring searched in 0.902231 seconds (length: 1755)
