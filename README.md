@@ -82,6 +82,7 @@
   - [Lab 4: Сравнение файлового ввода-вывода и SQLite](6sem/PARVPO/lab4/)
   - [Lab 7: Влияние уровней оптимизации компилятора](6sem/PARVPO/lab7/)
   - [Lab 8: Оптимизация с использованием LTO](6sem/PARVPO/lab8/)
+  - [Lab 9: Оптимизации с const, volatile](6sem/PARVPO/lab9/)
 
 ## Требования
 
